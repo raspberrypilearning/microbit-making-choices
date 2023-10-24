@@ -6,7 +6,7 @@ To do this, you need to make a variable.
 
 ### The variable
 
-Open the `Variables`{:class='microbitvariables'} menu in your Toolbox, and click **Create a variable**. 
+Open the `Variables`{:class='microbitvariables'} menu in your Toolbox, and click **Create a Variable**. 
 
 Give your variable a **meaningful** name, one that represents the choice the user will make. 
 
@@ -38,7 +38,7 @@ You also want to make sure the variable can't go below `1` or above the number o
 
 ### Change the output based on the variable
 
-Now, all that is left for you to do is to use an `if`{:class='microbitlogic'} block to change the micro:bit's behaviour depending on the value of the variable. 
+Now, all that is left for you to do is to use an `if`{:class='microbitlogic'} block to change what the micro:bit does depending on the value of the variable. 
 
 Open the `Logic`{:class='microbitlogic'} menu and drag an `if`{:class='microbitlogic'} block into the workspace. 
 
