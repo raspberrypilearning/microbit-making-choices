@@ -1,0 +1,10 @@
+title: Making choices
+hero_image: images/banner.png
+description: Allow a user of your micro:bit program to make choices
+version: 1
+listed: false
+copyedit: false
+last_tested: "2022-05-19"
+steps:
+  - 
+    title: Let your users make choices
