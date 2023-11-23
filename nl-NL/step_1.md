@@ -1,22 +1,22 @@
-## Allow users to make choices
+## Laat gebruikers keuzes maken
 
-There might be a situation where you want a user to be able to choose from a set of options.
+Er kan een situatie zijn waarbij je wilt dat een gebruiker kan kiezen uit een aantal opties.
 
-To do this, you need to make a variable.
+Om dit te doen, moet je een variabele maken.
 
-### The variable
+### De variabele
 
-Open the `Variables`{:class='microbitvariables'} menu in your Toolbox, and click **Create a Variable**.
+Open het Variabelen{:class="microbitvariables"} menu in je Toolbox en klik op **Maak een variabele**.
 
-Give your variable a **meaningful** name, one that represents the choice the user will make.
+Geef je variabele een **betekenisvolle** naam, een naam die de keuze vertegenwoordigt die de gebruiker zal maken.
 
-Drag the `set`{:class='microbitvariables'} block into the `on start`{:class='microbitbasic'} block and set the value of your variable to `1`.
+Sleep het `stel in op`{:class='microbitvariables'} blok naar het `bij opstarten `{:class='microbitbasic'} blok en stel de waarde van je variabele in op `1`.
 
-### Change the variable
+### De variabele wijzigen
 
-Next, you need to add some inputs that the user can use to change the value in the variable.
+Vervolgens moet je enkele invoermogelijkheden toevoegen die de gebruiker kan gebruiken om de waarde in de variabele te wijzigen.
 
-You can use buttons or gestures.
+Je kunt knoppen of gebaren gebruiken.
 
 ```microbit
 let tune = 0
@@ -34,21 +34,21 @@ input.onButtonPressed(Button.B, function () {
 })
 ```
 
-You also want to make sure the variable can't go below `1` or above the number of options you have. In the example above, there are 4 options for tunes.
+Je wilt er ook voor zorgen dat de variabele niet onder `1` komt of boven het aantal opties dat je hebt. In het bovenstaande voorbeeld zijn er 4 opties voor deuntjes.
 
-### Change the output based on the variable
+### Wijzig de uitvoer op basis van de variabele
 
-Now, all that is left for you to do is to use an `if`{:class='microbitlogic'} block to change what the micro:bit does depending on the value of the variable.
+Het enige wat je nu nog hoeft te doen is een `als`{:class='microbitlogic'} blok te gebruiken om te veranderen wat de micro:bit doet, afhankelijk van de waarde van de variabele.
 
-Open the `Logic`{:class='microbitlogic'} menu and drag an `if`{:class='microbitlogic'} block into the workspace.
+Vanuit het `Logisch`{:class="microbitlogic"} menu, sleep een `als`{:class="microbitlogic"} blok naar het bewerkingspaneel.
 
-To make choices, you need an `else if`{:class='microbitlogic'} for each option, and you don't want the `else`{:class='microbitlogic'} that automatically comes with the `if`{:class='microbitlogic'} block.
+Om keuzes te maken heb je een `anders als`{:class='microbitlogic'} nodig voor elke optie, en je wilt geen `anders`{:class='microbitlogic'} die automatisch meekomt met het `als`{:class='microbitlogic'} blok.
 
-Click the `+` symbol to add as many `else if`{:class='microbitlogic'} blocks as you need. Then click the `-` symbol under the `else`{:class='microbitlogic'} to remove it.
+Klik op het `+` symbool om zoveel `anders als`{:class='microbitlogic'} blokken toe te voegen als je nodig hebt. Klik vervolgens op het `-` symbool onder `anders`{:class='microbitlogic'} om het te verwijderen.
 
 <img src="images/elseif-blocks.gif" alt="An animation showing the + symbol being used to add three 'else if' sections. Finally, the 'else' is removed from the end by clicking the '-' symbol next to it." width="350"/>
 
-Use the `0 = 0`{:class='microbitlogic'} blocks and the variable name block to set up responses for each of your `if`{:class='microbitlogic'} and `else if`{:class='microbitlogic'} options.
+Gebruik de `0 = 0`{:class='microbitlogic'} blokken en het variabele naamblok om antwoorden in te stellen voor elk van je `als`{:class='microbitlogic'} en `anders als`{:class='microbitlogic'} opties.
 
 ```microbit
 basic.forever(function () {
