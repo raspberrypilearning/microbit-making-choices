@@ -6,7 +6,7 @@ Om dit te doen, moet je een variabele maken.
 
 ### De variabele
 
-Open het Variabelen{:class='microbitvariables'} menu in je Toolbox en klik op **Maak een variabele**.
+Open het `Variabelen`{:class='microbitvariables'} menu in je Toolbox en klik op **Maak een variabele**.
 
 Geef je variabele een **betekenisvolle** naam, een naam die de keuze vertegenwoordigt die de gebruiker zal maken.
 
