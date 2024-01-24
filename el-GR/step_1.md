@@ -6,7 +6,7 @@
 
 ### Η μεταβλητή
 
-Άνοιξε το μενού Μεταβλητές{:class="microbitvariables"} και κάνε κλικ στο κουμπί **Δημιουργία μεταβλητής**.
+Άνοιξε το μενού `Μεταβλητές`{:class="microbitvariables"} και κάνε κλικ στο κουμπί **Δημιουργία μεταβλητής**.
 
 Δώσε στη μεταβλητή σου ένα όνομα **με νόημα**, που αντιπροσωπεύει την επιλογή που θα κάνει ο χρήστης.
 
@@ -44,11 +44,11 @@ input.onButtonPressed(Button.B, function () {
 
 Για να κάνεις επιλογές, χρειάζεσαι ένα `αλλιώς εάν`{:class='microbitlogic'} για κάθε επιλογή και δεν χρειάζεσαι το `αλλιώς`{:class='microbitlogic'} που συνοδεύεται αυτόματα με το μπλοκ `εάν`{:class='microbitlogic'}.
 
-Κάνε κλικ στο σύμβολο "+" για να προσθέσεις όσα μπλοκ "αλλιώς εάν"{:class='microbitlogic'} χρειάζεσαι. Στη συνέχεια, κάνε κλικ στο σύμβολο `-` κάτω από το `αλλιώς`{:class='microbitlogic'} για να το αφαιρέσεις.
+Κάνε κλικ στο σύμβολο `+` για να προσθέσεις όσα μπλοκ `αλλιώς εάν`{:class='microbitlogic'} χρειάζεσαι. Στη συνέχεια, κάνε κλικ στο σύμβολο `-` κάτω από το `αλλιώς`{:class='microbitlogic'} για να το αφαιρέσεις.
 
 <img src="images/elseif-blocks.gif" alt="An animation showing the + symbol being used to add three 'else if' sections. Finally, the 'else' is removed from the end by clicking the '-' symbol next to it." width="350"/>
 
-Χρησιμοποίησε τα μπλοκ "0 = 0"{:class='microbitlogic'} και το μπλοκ ονόματος μεταβλητής για να καθορίσεις τις απαντήσεις για κάθε μία από τις επιλογές "εάν"{:class='microbitlogic'} και "αλλιώς εάν"{:class=' microbitlogic'}.
+Χρησιμοποίησε τα μπλοκ `0 = 0`{:class='microbitlogic'} και το μπλοκ ονόματος μεταβλητής για να καθορίσεις τις απαντήσεις για κάθε μία από τις επιλογές `εάν`{:class='microbitlogic'} και `αλλιώς εάν`{:class='microbitlogic'}.
 
 ```microbit
 basic.forever(function () {
