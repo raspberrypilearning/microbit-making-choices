@@ -1,0 +1,10 @@
+---
+title: Κάνοντας επιλογές
+hero_image: images/banner.png
+description: Επίτρεψε σε έναν χρήστη του προγράμματος micro:bit να κάνει επιλογές
+version: 1
+listed: false
+copyedit: false
+last_tested: "2022-05-19"
+steps:
+  - title: Άφησε τους χρήστες σου να κάνουν επιλογές
