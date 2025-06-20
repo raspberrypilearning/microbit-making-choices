@@ -1,22 +1,22 @@
-## Allow users to make choices
+## Permettre aux utilisateurs de faire des choix
 
-There might be a situation where you want a user to be able to choose from a set of options.
+Il peut arriver que tu souhaites qu'un utilisateur puisse choisir parmi un ensemble d'options.
 
-To do this, you need to make a variable.
+Pour cela, tu dois créer une variable.
 
-### The variable
+### La variable
 
-Open the `Variables`{:class='microbitvariables'} menu in your Toolbox, and click **Create a Variable**.
+Ouvre le menu `Variables`{:class='microbitvariables'} dans ta boîte à outils et clique sur **Créer une variable**.
 
-Give your variable a **meaningful** name, one that represents the choice the user will make.
+Donne à ta variable un nom **significatif**, qui représente le choix que l'utilisateur fera.
 
-Drag the `set`{:class='microbitvariables'} block into the `on start`{:class='microbitbasic'} block and set the value of your variable to `1`.
+Fais glisser le bloc `définir`{:class='microbitvariables'} dans le bloc `au démarrage`{:class='microbitbasic'} et définis la valeur de ta variable sur `1`.
 
-### Change the variable
+### Modifier la variable
 
-Next, you need to add some inputs that the user can use to change the value in the variable.
+Ensuite, tu dois ajouter des entrées que l'utilisateur peut utiliser pour modifier la valeur de la variable.
 
-You can use buttons or gestures.
+Tu peux utiliser des boutons ou des gestes.
 
 ```microbit
 let tune = 0
@@ -34,21 +34,21 @@ input.onButtonPressed(Button.B, function () {
 })
 ```
 
-You also want to make sure the variable can't go below `1` or above the number of options you have. In the example above, there are 4 options for tunes.
+Tu dois également t'assurer que la variable ne peut pas descendre en dessous de `1` ou au-dessus du nombre d'options dont tu disposes. Dans l'exemple ci-dessus, il y a 4 options pour les musiques.
 
-### Change the output based on the variable
+### Modifier la sortie en fonction de la variable
 
-Now, all that is left for you to do is to use an `if`{:class='microbitlogic'} block to change what the micro:bit does depending on the value of the variable.
+Il ne te reste plus qu'à utiliser un bloc `si`{:class='microbitlogic'} pour modifier ce que fait le micro:bit en fonction de la valeur de la variable.
 
-Open the `Logic`{:class='microbitlogic'} menu and drag an `if`{:class='microbitlogic'} block into the workspace.
+Ouvre le menu `Logique`{:class='microbitlogic'} et fais glisser un bloc `si`{:class='microbitlogic'} dans l'espace de travail.
 
-To make choices, you need an `else if`{:class='microbitlogic'} for each option, and you don't want the `else`{:class='microbitlogic'} that automatically comes with the `if`{:class='microbitlogic'} block.
+Pour faire des choix, tu as besoin d'un `sinon si`{:class='microbitlogic'} pour chaque option, et tu ne souhaites pas du `sinon`{:class='microbitlogic'} qui vient automatiquement avec le bloc `si`{:class='microbitlogic'}.
 
-Click the `+` symbol to add as many `else if`{:class='microbitlogic'} blocks as you need. Then click the `-` symbol under the `else`{:class='microbitlogic'} to remove it.
+Clique sur le symbole `+` pour ajouter autant de blocs `sinon si`{:class='microbitlogic'} que tu as besoin. Puis clique sur le symbole `-` sous le `sinon`{:class='microbitlogic'} pour le supprimer.
 
 <img src="images/elseif-blocks.gif" alt="An animation showing the + symbol being used to add three 'else if' sections. Finally, the 'else' is removed from the end by clicking the '-' symbol next to it." width="350"/>
 
-Use the `0 = 0`{:class='microbitlogic'} blocks and the variable name block to set up responses for each of your `if`{:class='microbitlogic'} and `else if`{:class='microbitlogic'} options.
+Utilise les blocs `0 = 0`{:class='microbitlogic'} et le bloc nom de la variable pour définir des réponses pour chacune de tes options `si`{:class='microbitlogic'} et `sinon si`{:class='microbitlogic'}.
 
 ```microbit
 basic.forever(function () {
