@@ -1,1 +1,3 @@
 musique
+
+An animation showing the + symbol being used to add three 'else if' sections. Finally, the 'else' is removed from the end by clicking the '-' symbol next to it.
